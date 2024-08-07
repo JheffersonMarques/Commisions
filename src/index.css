@@ -1,0 +1,223 @@
+* {
+    font-weight: 400;
+    color: white;
+    font-family: 'Titillium Web';
+    margin: 0px;
+    padding: 0px;
+    --main-color: #6d47a2;
+    --secondary-color: #222222;
+    --terceary-color: #292929;
+    --terceary-color-highlight: #323232;
+
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+.landing {
+    height: 60dvh;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.404);
+    position: relative;
+}
+
+.landing-welcome {
+    font-size: 48pt;
+}
+
+.about-me {
+    height: 80dvh;
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.404);
+    position: relative;
+}
+
+.about-me-title {
+    margin: 8rem;
+}
+
+.about-me-text {
+    text-align: justify;
+    font-size: 20px;
+    width: 30dvw;
+}
+
+.my-work {    
+    background: var(--terceary-color);
+    display: flex;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.404);
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.my-work-title {
+    margin: 1rem;
+}
+
+.my-work-content > p, .commissions > p {
+    text-align: center;
+    font-size: 20px;
+    margin: 1rem;
+}
+
+.my-work-mods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mod-card-icon {
+    width: 128px;
+    border-radius: 5px;
+}
+
+.mod-card {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0px 0px 1rem 2px rgba(0, 0, 0, 0.603);
+    position: relative;
+    border-radius: 5px;
+    margin: 1rem;
+    width: 55dvw;
+}
+
+.mod-downloads {
+    padding-left: 1rem;
+    color: var(--terceary-color);
+}
+
+.mod-card-content {
+    width: 100%;
+}
+
+.mod-card-title {
+    padding-left: 1rem;
+    color: var(--secondary-color);
+}
+
+.mod-card-desc {
+    padding-left: 1rem;
+    text-align: justify;
+    text-wrap: wrap;
+    color: var(--secondary-color);
+}
+
+.mod-card-footer {
+    display: flex;
+    justify-content: right;
+}
+
+.button {
+    color: white;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    background: var(--main-color);
+}
+
+.my-work-title-mods {
+    text-align: center;
+    font-size: 32px;
+}
+
+.commissions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.commissions-title {
+    color: var(--secondary-color);
+}
+
+.commissions > p {
+    color: var(--secondary-color);
+}
+
+.terms-of-service {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.tos-title {
+    color: var(--secondary-color);
+}
+
+.tos {
+    padding: 4rem;
+}
+
+b {
+    font-weight: bold;
+}
+
+.tos > li, b {
+    font-size: 13pt;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 900px) {
+
+    .landing {
+        height: 40dvh;
+    }
+
+    .about-me {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .about-me-title {
+        margin: 1rem;
+    }
+
+    .about-me-text {
+        width: 80dvw;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .mod-card {
+        flex-direction: column;
+    }
+
+    .mod-card-title {
+        padding-left: 0px;
+    }
+
+    .mod-card-desc {
+        padding-left: 0px;
+    }
+
+    .mod-card-icon {
+        width: 100%;
+    }
+
+    .mod-card-footer {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .mod-downloads {
+        padding-left: 0px;
+    }
+}
